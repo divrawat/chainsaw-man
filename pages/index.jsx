@@ -90,13 +90,13 @@ export default function Home() {
       <article>
 
         <div className="md:flex md:mb-[60px] mb-5 pt-3 relative bg-[black]">
-          <div className="absolute inset-0 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${BEHIND_COVER_IMG})`, opacity: '0.25' }}></div>
+          <div className="absolute inset-0 bg-cover bg-no-repeat bg-center z-0" style={{ backgroundImage: `url(${BEHIND_COVER_IMG})`, opacity: '0.15', }}></div>
 
           <div className="pt-3 md:w-2/5">
-            <img className="mx-auto md:mx-0" width={450} height={450} src={`${COVER_IMG}`} alt="Manga Cover" />
+            <img className="mx-auto md:mx-0 z" style={{ zIndex: 10 }} width={440} height={440} src={`${COVER_IMG}`} alt="Manga Cover" />
           </div>
 
-          <div className="md:w-3/5 md:mr-10  text-white p-5 relative z-10">
+          <div className="md:w-3/5 md:mr-10  text-white px-5 pt-1 pb-2 relative z-10">
             <h1 className="text-center font-extrabold text-4xl my-5 uppercase">{MANGA_NAME}</h1>
             <p className="my-5 leading-[2] px-6 text-center" dangerouslySetInnerHTML={{ __html: MANGA_DESCRIPTION }} />
 
@@ -148,7 +148,7 @@ export default function Home() {
 
 
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
-          <Link href={DOMAIN} className="hover:underline">{`Read ${MANGA_NAME} Chapters Online`}</Link>
+          <Link href={DOMAIN} className="hover:underline">{`Read ${MANGA_NAME} Manga Online`}</Link>
         </h2>
 
         <div className="mt-10 max-w-[1100px] mb-10 mx-auto px-5 flex flex-wrap justify-center">

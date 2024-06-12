@@ -1,9 +1,10 @@
 
-export const DOMAIN = 'http://localhost:3000';
-// export const DOMAIN = 'https://www.chainsawmanmanga.in.net';
+// export const DOMAIN = 'http://localhost:3000';
+export const DOMAIN = 'https://www.chainsawmanmanga.in.net';
 
 
-export const MANGA_DESCRIPTION = `Set in the Viking era, this manga follows Thorfinn's quest for revenge and his dream of finding the legendary land of Vinland. Filled with action and historical drama, <a href="${DOMAIN}"><u>Vinland Saga</u></a> is a thrilling story about battles, honor, and the search for peace. Perfect for fans of exciting, historical tales. Experience the gripping adventures of Thorfinn as he navigates through the tumultuous Viking world, facing formidable challenges and discovering his own path to redemption.`;
+export const MANGA_DESCRIPTION = `<a href="${DOMAIN}"><u>Chainsaw Man</u></a> is a wild manga about Denji, a young man drowning in debt who becomes a devil hunter. After merging with his pet devil, Pochita, he transforms into Chainsaw Man, gaining chainsaw powers. The story follows his brutal battles against devils and his quest for a better life in a chaotic, darkly humorous world. It's a thrilling and unexpected ride. The story dives into his brutal fights against other devils and his struggle for a better life.`
+
 
 export const MANGA_NAME = 'Chainsaw Man';
 export const MANGA_AUTHOR = 'Tatsuki Fujimoto';
@@ -20,12 +21,17 @@ export const URL_PREFIX = 'manga/chainsaw-man-chapter';
 
 export const AUTHOR_PAGE = `${DOMAIN}/chainsaw-man-team`;
 export const LOGO_URL = `${DOMAIN}/logo.webp`;
-export const COVER_IMG = `${DOMAIN}/cover.webp`;
-export const BEHIND_COVER_IMG = "https://m.media-amazon.com/images/M/MV5BZTllZTBmNWItYWYyNC00ZWYwLWFmZWEtNDhmOTk0ZjdjYmRhXkEyXkFqcGdeQXVyMTM0NTgxMzc2._V1_.jpg";
+export const COVER_IMG = `${DOMAIN}/cover.jpg`;
+
+export const BEHIND_COVER_IMG = "https://i.ytimg.com/vi/LDddpxLtAPA/sddefault.jpg"
 
 
+export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[75px] sm:w-[380px] w-[280px] mr-5 md:ml-0 ml-4 md:pb-2 md:my-0 my-1" />
 
-export const APP_DESCRIPTION = `Read "${MANGA_NAME}" manga online at "${DOMAIN}". Enjoy high-quality scans, latest chapters, and connect with fans in our vibrant community.`;
+export const APP_NAME = 'Chainsaw Man';
+export const NavbarName = "Chainsaw Man";
+
+export const APP_DESCRIPTION = `Read "${MANGA_NAME}" manga online at "${DOMAIN}". Enjoy high-quality scans, latest chapters, and connect with fans in our comment section.`;
 
 export const DISQUS_SHORTNAME = "my-cms-7";
 
@@ -33,36 +39,31 @@ export const DISQUS_SHORTNAME = "my-cms-7";
 export const MANGA_SUMMARY = [
     {
         id: 1,
-        content: "Vinland Saga is a gripping manga and anime series that plunges viewers into the tumultuous world of Vikings during the Viking Age. At its core is the compelling story of Thorfinn, a young boy whose life is shattered when his father, Thors, a renowned warrior, is killed. Driven by an unquenchable thirst for vengeance, Thorfinn embarks on a perilous journey to avenge his father's death."
+        content: "Chainsaw Man is a manga that pulls you in with its raw, chaotic energy and keeps you hooked with its surprisingly deep story. It centers on Denji, a young guy who's hit rock bottom. He's saddled with a mountain of debt left by his dead father and is living hand-to-mouth, doing dangerous devil-hunting jobs with the help of his adorable yet terrifying pet devil, Pochita."
     },
     {
         id: 2,
-        content: "As the series unfolds, viewers are taken on a gripping adventure filled with intense battles, complex characters, and moral dilemmas. Thorfinn's quest for revenge leads him into the heart of the Viking world, where he encounters warlords, mercenaries, and fellow warriors, each with their own motivations and agendas."
+        content: "Things take a drastic turn when Denji gets killed by a devil. In a heart-wrenching moment, Pochita sacrifices itself to save him, merging with Denji and turning him into Chainsaw Man, a hybrid with chainsaws sprouting from his limbs. This transformation is both grotesque and fascinating, setting the stage for the wild ride that follows."
     },
     {
         id: 3,
-        content: "Yet, amidst the chaos of battle and the brutality of Viking society, Thorfinn's journey also becomes one of self-discovery and redemption. Along the way, he grapples with questions of honor, loyalty, and the true meaning of strength. As Thorfinn confronts the harsh realities of his world, he begins to question his desire for vengeance and yearns for a life of peace and purpose."
+        content: "As Chainsaw Man, Denji is recruited by the Public Safety Devil Hunters, a government agency that deals with devil threats. Here, he meets a cast of characters as broken and complex as he is, like the cool and mysterious Aki and the erratic but endearing Power, who is also a devil-human hybrid. They form a dysfunctional yet oddly heartwarming family, navigating the constant danger their job entails."
     },
     {
         id: 4,
-        content: "The concept of Vinland, a legendary land across the sea where conflict is replaced by harmony, serves as both a literal and metaphorical destination for Thorfinn. It represents his ultimate goal – a place where he can escape the cycle of violence and find a new beginning."
+        content: "The beauty of 'Chainsaw Man' lies in its balance of over-the-top action and genuine emotional moments. Denji's simple desires—like wanting a normal life, good food, and human connection—make him incredibly relatable. Despite the blood-soaked battles and absurd scenarios, his journey is one of personal growth and seeking happiness in a brutal world."
     },
     {
         id: 5,
-        content: "Through stunning artwork, intricate storytelling, and rich historical detail, Vinland Saga captivates audiences with its exploration of themes such as justice, identity, and the human spirit. It challenges viewers to confront the complexities of morality and the consequences of one's actions, all within the vivid backdrop of Viking-era Scandinavia."
+        content: "Author Tatsuki Fujimoto isn't afraid to throw curveballs, leading to plot twists that are as shocking as they are impactful. The art style complements the story perfectly, with gritty, visceral illustrations that bring the chaotic fights to life."
     },
     {
         id: 6,
-        content: "In the end, Vinland Saga is not just a tale of revenge, but a profound saga of growth, redemption, and the enduring search for meaning in a world torn apart by conflict."
+        content: "In essence, 'Chainsaw Man' is more than just a horror-action manga. It's a story about finding hope and humanity in the darkest of places, wrapped in a wild, unpredictable package that's as heart-pounding as it is heartfelt."
     }
 ];
 
 
-// Navbar
-export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[75px] w-[185px] mr-5 md:ml-0 ml-4 md:pb-2 md:my-0 my-1" />
-
-export const APP_NAME = 'Chainsaw Man';
-export const NavbarName = "Chainsaw Man";
 
 export const navLinks = [
     { text: 'Home', href: `${DOMAIN}` },
