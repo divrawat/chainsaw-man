@@ -3,7 +3,7 @@ import { DOMAIN } from "../config";
 const generateRobotsTxt = () => {
     let robotsTxtContent = `User-agent: *
 Disallow:
-Sitemap: https://${DOMAIN}/sitemap.xml
+Sitemap: ${DOMAIN}/sitemap.xml
 `;
     return robotsTxtContent;
 };
