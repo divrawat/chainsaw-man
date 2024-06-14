@@ -31,7 +31,7 @@ export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[75px] sm:w
 export const APP_NAME = 'Chainsaw Man';
 export const NavbarName = "Chainsaw Man";
 
-export const APP_DESCRIPTION = `Read "${MANGA_NAME}" manga online at "${DOMAIN}". Enjoy high-quality scans, latest chapters, and connect with fans in our comment section.`;
+export const APP_DESCRIPTION = `Read "${MANGA_NAME}" manga online at ${DOMAIN}. Enjoy high-quality scans, latest chapters, and connect with fans in our comment section.`;
 
 export const DISQUS_SHORTNAME = "my-cms-7";
 
